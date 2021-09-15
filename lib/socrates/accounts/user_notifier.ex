@@ -8,7 +8,7 @@ defmodule Socrates.Accounts.UserNotifier do
     email =
       new()
       |> to(recipient)
-      |> from({"MyApp", "contact@example.com"})
+      |> from({"Socrates", "Socrates@LiterateLabs.com"})
       |> subject(subject)
       |> text_body(body)
 

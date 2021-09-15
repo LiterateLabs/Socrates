@@ -15,7 +15,8 @@ defmodule Socrates.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Socrates.PubSub},
       # Start the Endpoint (http/https)
-      SocratesWeb.Endpoint
+      SocratesWeb.Endpoint,
+      {Finch, name: Swoosh.Finch}
       # Start a worker by calling: Socrates.Worker.start_link(arg)
       # {Socrates.Worker, arg}
     ]
